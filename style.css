@@ -21,6 +21,19 @@ body {
   justify-content: center;
 }
 
+.header::before {
+  height:100vh;
+  width: 100vw;
+  background: linear-gradient(45deg, #fff 0%, #fff 65%, rgba(205, 233, 242, 1) 65%, rgba(205, 233, 242, 1) 100%);
+  position: relative;
+  left: 0;
+  top: 0;
+  /* Now this will center the header text */
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
 .header-content-right {
   position: absolute;
   right: 10vw;
@@ -47,6 +60,46 @@ body {
   position: absolute;
   bottom: 0;
 }
+
+/* ##################### NAVBAR DESIGNS ##################### */
+
+.navbar {
+  width: 100%;
+  background-color: transparent;
+  height: 70px;
+  position: fixed;
+  z-index: 1000;
+}
+
+.navbar ul {
+  padding-left: 10px;
+}
+
+.navbar li {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+
+}
+
+.navbar a {
+  border-radius: 50%;
+  color: white;
+  background-color: #81F4E1;
+}
+
+#user {
+  padding: 10px 17px;
+}
+
+#film {
+  padding: 10px 14px;
+}
+
+#email {
+  padding: 10px 15px;
+}
+
 /* ##################### HEADING DESIGNS ##################### */
 h1 {
   color: color: rgba(0,0,0,0.75);
@@ -146,7 +199,11 @@ a:hover {
 /* ##################### SOCIAL LINKS STYLING ##################### */
 
 .icon-large {
-  font-size: 80px
+  font-size: 80px;
+}
+
+.icon-small {
+  font-size: 40px;
 }
 
 .links-inline {

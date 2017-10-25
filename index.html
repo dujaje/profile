@@ -1,6 +1,6 @@
 <html><head>
     <meta charset="utf-8">
-    <title>Jamie Dujardin</title>
+    <title>J'amie</title>
 
     <!-- ################ FONTS ##################### -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700" rel="stylesheet">
@@ -12,11 +12,20 @@
   </head>
 
   <body>
+    <!-- ################ NAVBAR ##################### -->
+    <div class="navbar">
+      <ul>
+        <li><a id="user" href="#experience"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+        <li><a id="film" href="#films"><i class="fa fa-film" aria-hidden="true"></i></a></li>
+        <li><a id="email" href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+
     <!-- ################ HEADER ##################### -->
       <div class="header">
         <div class="header-content-right">
           <h1>Jamie<br>Dujardin</h1>
-          <h2>Mckinsey, ex-Oxford University, Le Wagon Student</h2>
+          <h2>Mckinsey, Le Wagon Student, Likes Taking Photos</h2>
           <button href=# class="btn-primary-outline margin-top"><span>More about me</span></button>
         </div>
         <!--<div id="triangle-bottom-left"></div>-->
@@ -24,8 +33,9 @@
 
     <div class="container">
     <!-- ################ INTRODUCTION ##################### -->
-      <div class="card">
+      <div id="experience" class="card">
         <img src="images/profile_picture.jpg" alt="Jamie Dujardin" class="img-profile-large img-cirle img-shadow">
+        <h2>- Education and Experience -</h2>
         <p>My life is rather boring, hence the lack of cool introduction here...</p>
       </div>
     <!-- ################ SOCIAL ##################### -->
@@ -50,7 +60,7 @@
         </ul>
       </div>
       <!-- ################ MOVIES ##################### -->
-      <div class="card">
+      <div id="films" class="card">
         <h2>- My Favorite movies -</h2>
         <table>
           <tbody>
@@ -85,27 +95,9 @@
         </table>
       </div>
       <!-- ################ FOOTER ##################### -->
-      <div class="card">
-        <h2>- About this page -</h2>
-        <p>This page has been coded during the <a href="https://lewagon.org/program" target="_blank">FullStack program @LeWagon</a>. That was probably the best experience of my entire life.</p>
-
-        <ul>
-         <li>
-           <a href="#">
-             <i class="fa fa-heart"></i>
-           </a>
-         </li>
-         <li>
-           <a href="#">
-             <i class="fa fa-share"></i>
-           </a>
-         </li>
-         <li>
-           <a href="#">
-             <i class="fa fa-star"></i>
-           </a>
-         </li>
-        </ul>
+      <div id="contact" class="card">
+        <h2>- Get in Touch -</h2>
+        <a href="jamiedujardin@gmail.com"><i class="fa fa-envelope icon-large" aria-hidden="true"></i><br><br>Email Me</a>
       </div>
 
     </div>
