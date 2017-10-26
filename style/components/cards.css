@@ -1,0 +1,17 @@
+/* ##################### CARD STYLING ##################### */
+
+.card {
+  margin: 50px auto;
+  background-color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.1)
+}
+
+.card h2 {
+  margin: 20px 0px 20px 0;
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+}

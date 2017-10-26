@@ -1,0 +1,40 @@
+
+#tabs {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px 0;
+}
+
+ul#tabs li {
+  margin: 0;
+  padding: 0;
+}
+
+ul#tabs li a {
+  color: rgba(0,0,0,0.6);
+  border-bottom: none;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 10px 40px;
+  letter-spacing: 1px;
+}
+
+ul#tabs li a:hover {
+  border-bottom: 5px solid rgba(205, 233, 242, 1);
+}
+
+ul#tabs li a.selected {
+  color: rgba(0,0,0,0.6);
+  border-top: 5px solid rgba(205, 233, 242, 1);
+}
+
+div.tabContent {
+  border-top: 2px solid rgba(205, 233, 242, 1);
+  padding-top: 50px;
+}
+
+div.tabContent.hide {
+  display: none;
+}

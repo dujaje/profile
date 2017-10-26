@@ -1,0 +1,40 @@
+.header {
+  height:100vh;
+  width: 100vw;
+  background: linear-gradient(192.5deg, #fff 0%, #fff 65%, rgba(205, 233, 242, 1) 65%, rgba(205, 233, 242, 1) 100%);
+  position: relative;
+  left: 0;
+  top: 0;
+  /* Now this will center the header text */
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.header-content-right {
+  position: absolute;
+  right: 10vw;
+  top: 25vh;
+  text-align: center;
+  line-height: 120%;
+}
+
+.header h1 {
+  text-align: center;
+  line-height: 120%;
+}
+
+.header h2 {
+  font-weight: normal;
+  line-height: 1%;
+}
+
+#triangle-bottom-left {
+  width: 0;
+  height: 0;
+  border-bottom: 50vh solid rgba(205, 233, 242, 1);;
+  border-right: 100vw solid transparent;
+  position: absolute;
+  bottom: 0;
+}
+

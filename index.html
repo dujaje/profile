@@ -1,105 +1,124 @@
-<html><head>
-    <meta charset="utf-8">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <!-- ############## SEO ################### -->
     <title>Jamie Dujardin</title>
 
-    <!-- ################ FONTS ##################### -->
+    <!-- ########### IMPORTING STYLESHEETS ################ -->
+    <link rel="stylesheet" href="style/style2.css">
+
+    <!-- ########### IMPORTING JAVASCRIPT ################ -->
+    <script type="text/javascript" src="javascript/tabs-script.js"></script>
+
+    <!-- ############## IMPORTING FONTS ################### -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,400,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- ################ STYLESHEETS ##################### -->
-    <link rel="stylesheet" href="style.css">
   </head>
-
-  <body>
-    <!-- ################ NAVBAR ##################### -->
-    <div class="navbar">
-      <ul>
-        <li><a id="user" href="#experience"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-        <li><a id="film" href="#films"><i class="fa fa-film" aria-hidden="true"></i></a></li>
-        <li><a id="email" href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-      </ul>
-    </div>
+  <body onload="init()" cz-shortcut-listen="true">
 
     <!-- ################ HEADER ##################### -->
       <div class="header">
         <div class="header-content-right">
-          <h1>Jamie<br>Dujardin</h1>
-          <h2>Mckinsey, Le Wagon Student, Likes Taking Photos</h2>
+          <h1 data-text="Jamie">Jamie</h1>
+          <h1 data-text="Dujardin">Dujardin</h1>
+          <h2>Mckinsey, Le Wagon Student, ex-Oxford University</h2>
           <button href=# class="btn-primary-outline margin-top"><span>More about me</span></button>
         </div>
         <!--<div id="triangle-bottom-left"></div>-->
       </div>
 
+    <!-- ################ MAIN BODY ##################### -->
+    <!-- nb. body is made of three tabs, profile, projects, blog -->
     <div class="container">
-    <!-- ################ INTRODUCTION ##################### -->
-      <div id="experience" class="card">
-        <img src="images/profile_picture.jpg" alt="Jamie Dujardin" class="img-profile-large img-cirle img-shadow">
-        <h2>- Education and Experience -</h2>
-        <p>My life is rather boring, hence the lack of cool introduction here...</p>
-      </div>
-    <!-- ################ SOCIAL ##################### -->
-      <div class="card">
-        <h2>- Social -</h2>
-        <ul class="links-inline margin-top">
-          <li>
-            <a target="-_blank" href="https://github.com/dujaje">
-              <i class="fa fa-github icon-large"></i><br>Github
-            </a>
-          </li>
-          <li>
-            <a target="-_blank" href="https://www.linkedin.com/in/jamie-dujardin-81606495/">
-              <i class="fa fa-linkedin icon-large"></i><br>LinkedIn
-            </a>
-          </li>
-          <li>
-            <a target="-_blank" href="https://www.instagram.com/jamiedujardin/">
-              <i class="fa fa-instagram icon-large"></i><br>Instagram
-            </a>
-          </li>
+    <!-- ################ TAB HEADERS ##################### -->
+      <div class="tab-container">
+        <ul id="tabs">
+          <li><a href="#about" class="selected">Profile</a></li>
+          <li><a href="#advantages" class="">Projects</a></li>
+          <li><a href="#usage" class="">Blog</a></li>
         </ul>
       </div>
-      <!-- ################ MOVIES ##################### -->
-      <div id="films" class="card">
-        <h2>- My Favorite movies -</h2>
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                <img src="../shared/images/space-odyssey.jpg" alt="space odyssey">
-              </td>
-              <td>
-                <h3>2001 - Space Odyssey</h3>
-                <p>Humanity finds a mysterious, obviously artificial, object buried beneath the Lunar surface and, with the intelligent computer H.A.L. 9000, sets off on a quest.</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="../shared/images/monsieur-hulot.jpg" alt="monsieur hulot">
-              </td>
-              <td>
-                <h3>Monsieur Hulot</h3>
-                <p>Monsieur Hulot comes to a beachside hotel for a vacation, where he accidentally (but good-naturedly) causes havoc.</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="../shared/images/alien.jpg" alt="alien">
-              </td>
-              <td>
-                <h3>Alien</h3>
-                <p>The commercial vessel Nostromo receives a distress call from an unexplored planet. After searching for survivors, the crew heads home only to realize that a deadly bioform has joined them.</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <!-- ################ FOOTER ##################### -->
-      <div id="contact" class="card">
-        <h2>- Get in Touch -</h2>
-        <a href="jamiedujardin@gmail.com"><i class="fa fa-envelope icon-large" aria-hidden="true"></i><br><br>Email Me</a>
+    <!-- ################ PROFILE ##################### -->
+      <div class="all-tabs">
+        <div class="tabContent" id="about">
+                      <!--  EXPERIENCE  -->
+          <div id="experience" class="card">
+            <img src="images/profile_picture.jpg" alt="Jamie Dujardin" class="img-profile-large img-cirle img-shadow">
+            <h2>- Education and Experience -</h2>
+            <p>My life is rather boring, hence the lack of cool introduction here...</p>
+          </div>
+                      <!--  SOCIAL  -->
+          <div class="card">
+            <h2>- Social -</h2>
+            <ul class="links-inline margin-top">
+              <li>
+                <a target="-_blank" href="https://github.com/dujaje">
+                  <i class="fa fa-github icon-large"></i><br>Github
+                </a>
+              </li>
+              <li>
+                <a target="-_blank" href="https://www.linkedin.com/in/jamie-dujardin-81606495/">
+                  <i class="fa fa-linkedin icon-large"></i><br>LinkedIn
+                </a>
+              </li>
+              <li>
+                <a target="-_blank" href="https://www.instagram.com/jamiedujardin/">
+                  <i class="fa fa-instagram icon-large"></i><br>Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+                        <!--  EMAIL  -->
+          <div id="contact" class="card">
+            <h2>- Get in Touch -</h2>
+            <ul class="links-inline margin-top email-link">
+              <li>
+                  <a target="-_blank" href="https://www.instagram.com/jamiedujardin/">
+                    <i class="fa fa-envelope icon-large"></i><br>Email Me
+                  </a>
+                </li>
+              </ul>
+          </div>
       </div>
 
+    <!-- ################ PROJECTS ##################### -->
+
+        <div class="tabContent hide" id="advantages">
+          <div class="ongoing-projects">
+            <h6>Ongoing Projects</h6>
+            <div class="card">
+              <i class="fa fa-thumbs-down icon-large"></i>
+              <h2>Nothing special going on right now...</h2>
+
+            </div>
+          </div>
+
+          <div class="past-projects">
+            <h6>Past Projects</h6>
+            <div id="experience" class="card">
+              <img src="images/projects/vendr-logo.png" alt="Jamie Dujardin" class="img-profile-medium img-cirle img-shadow">
+              <h2>- Vendr -</h2>
+              <p>Co-founded Vendr. A startup that aimed to build new ways to track shopper footfall in high street retail stores through wifi technology.</p>
+              <p>Vendr won the audience choice award in the Oxford Idea Idol pitching competition.</p>
+              <p>Eventually Vendr was closed following wifi regulation changes and market movement towards bluetooth connectivity.</p>
+            </div>
+          </div>
+        </div>
+
+    <!-- ################ BLOG ##################### -->
+
+        <div class="tabContent hide" id="usage">
+          <h2>Using tabs</h2>
+          <div>
+            <p>Click a tab to view the tab's content. Using tabs couldn't be easier!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
     </div>
 
   </body>

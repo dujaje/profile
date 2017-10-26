@@ -1,0 +1,107 @@
+/* ################### IMPORTING COMPONENTS ################### */
+
+@import url('components/tabs.css');
+@import url('components/header.css');
+@import url('components/buttons.css');
+@import url('components/avatar.css');
+@import url('components/cards.css');
+@import url('components/footer.css');
+
+body {
+  background-color: rgba(0,0,0,0.02);
+  font-family: 'Poppins', sans-serif;
+  color: rgba(0,0,0,0.6);
+  font-size: 16px;
+  line-height: 120%;
+  margin: 0;
+}
+
+/* ##################### HEADING DESIGNS ##################### */
+h1 {
+  color: color: rgba(0,0,0,0.75);
+  font-size: 64px;
+  letter-spacing: 20px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+h1:before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    max-width: 7em;
+    white-space: nowrap;
+    color: rgba(205, 233, 242, 1);
+    animation: loading 8s linear;
+}
+@keyframes loading {
+    0% {
+        max-width: 0;
+    }
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.ongoing-projects h6 {
+  text-align: left;
+  font-size: 25px;
+}
+
+.past-projects h6 {
+  text-align: left;
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 16px;
+  color: color: rgba(0,0,0,0.6);
+}
+
+/* ##################### TEXT DESIGNS ##################### */
+
+p {
+line-height: 120%;
+}
+
+/* ##################### LINK DESIGNS ##################### */
+
+a {
+  color: rgba(205, 233, 242, 1);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+a:hover {
+}
+
+/* ##################### CONTAINER CENTERING ##################### */
+
+.container {
+  width: 900px;   /* This sets the width */
+  margin: 0 auto; /* This automatically sets left/right margins */
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+}

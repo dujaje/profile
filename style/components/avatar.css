@@ -1,0 +1,21 @@
+/* ##################### IMAGE STYLING ##################### */
+
+.img-cirle {
+  border-radius: 50%;
+}
+
+.img-profile-large {
+  width: 200px;
+}
+
+.img-profile-medium {
+  width: 100px;
+}
+
+.img-profile-small {
+  width: 50px;
+}
+
+.img-shadow {
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.15)
+}
