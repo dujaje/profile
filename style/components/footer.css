@@ -1,5 +1,12 @@
 .footer-wrapper {
   height: 200px;
   width: 100%;
-  background-color: rgba(0,0,0,0.6)
+  background-color: rgba(205, 233, 242, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-wrapper p {
+  color:white;
 }

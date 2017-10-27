@@ -1,0 +1,33 @@
+.learning-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 15px 30px 30px 30px;
+  height: 100px;
+  border-bottom: 3px solid rgba(205, 233, 242, 1);
+}
+
+.learning-item img {
+  width: 150px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.learning-item:first-child {
+  margin-top: 20px;
+}
+
+.learning-description {
+  flex-grow: 1;
+  text-align: left;
+  margin: 0 20px;
+}
+
+.learning-dates {
+  width:100px;
+}
+
+.learning-dates p {
+  margin: 3px 0;
+}

@@ -6,6 +6,7 @@
 @import url('components/avatar.css');
 @import url('components/cards.css');
 @import url('components/footer.css');
+@import url('components/learning-item.css');
 
 body {
   background-color: rgba(0,0,0,0.02);

@@ -32,7 +32,7 @@
 #triangle-bottom-left {
   width: 0;
   height: 0;
-  border-bottom: 50vh solid rgba(205, 233, 242, 1);;
+  border-bottom: 50vh solid rgba(205, 233, 242, 1);
   border-right: 100vw solid transparent;
   position: absolute;
   bottom: 0;
