@@ -9,7 +9,7 @@ button {
 
 .btn-primary-outline {
   border-radius: 20px;
-  background-color: white;
+  background-color: transparent;
   border: 2px solid;
   color: rgba(205, 233, 242, 1);
   text-align: center;
@@ -67,6 +67,7 @@ button {
   padding: 0 50px 4px 50px;
   line-height: 200%;
   list-style: none;
+  transition: border-bottom 200ms ease-in;
 }
 
 .links-inline li:hover {
@@ -82,5 +83,6 @@ button {
 
 .email-link {
   margin-right: 20px;
+  margin-bottom: 4px;
 }
 

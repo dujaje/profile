@@ -5,7 +5,6 @@
   margin: 15px 0;
   padding: 15px 30px 30px 30px;
   height: 100px;
-  border-bottom: 3px solid rgba(205, 233, 242, 1);
 }
 
 .learning-item img {
@@ -16,6 +15,35 @@
 
 .learning-item:first-child {
   margin-top: 20px;
+  border-bottom: 3px solid rgba(205, 233, 242, 1);
+}
+
+.learning-item:last-child {
+  border-bottom: 3px solid transparent;
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 15px 30px 30px 30px;
+  height: 100px;
+}
+
+.education-item img {
+  width: 150px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.education-item:first-child {
+  margin-top: 20px;
+  border-bottom: 3px solid rgba(205, 233, 242, 1);
+}
+
+.education-item:last-child {
+  border-bottom: 3px solid transparent;
 }
 
 .learning-description {
@@ -31,3 +59,4 @@
 .learning-dates p {
   margin: 3px 0;
 }
+

@@ -7,6 +7,7 @@
 @import url('components/cards.css');
 @import url('components/footer.css');
 @import url('components/learning-item.css');
+@import url('components/blog.css');
 
 body {
   background-color: rgba(0,0,0,0.02);
@@ -19,39 +20,34 @@ body {
 
 /* ##################### HEADING DESIGNS ##################### */
 h1 {
-  color: color: rgba(0,0,0,0.75);
+  color: rgba(205, 233, 242, 1);
   font-size: 64px;
   letter-spacing: 20px;
   margin: 0;
   padding-bottom: 10px;
 }
 
-h1:before {
+/*h1:before {
     content: attr(data-text);
     position: absolute;
     overflow: hidden;
     max-width: 7em;
     white-space: nowrap;
     color: rgba(205, 233, 242, 1);
-    animation: loading 8s linear;
+    animation: loading 1s linear;
 }
 @keyframes loading {
     0% {
         max-width: 0;
     }
-}
+}*/
 
 h2 {
   font-size: 20px;
   text-align: center;
 }
 
-.ongoing-projects h6 {
-  text-align: left;
-  font-size: 25px;
-}
-
-.past-projects h6 {
+h6 {
   text-align: left;
   font-size: 25px;
 }
@@ -105,4 +101,11 @@ a:hover {
     width: 300px;
     margin: 0 auto;
   }
+}
+
+hr {
+  width: 70%;
+  height: 4px;
+  background-color: rgba(205, 233, 242, 1);
+  border: 0px;
 }

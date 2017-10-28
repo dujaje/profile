@@ -1,0 +1,17 @@
+.blog h6 {
+  margin-bottom: 10px;
+}
+
+.blog h5 {
+  font-weight: normal;
+  text-align: left;
+  font-size: 20px;
+  margin: 0;
+  opacity: 0.6;
+}
+
+.blog-posts {
+  text-align: center;
+  padding: 20px;
+  margin: 0 0 50px 0;
+}

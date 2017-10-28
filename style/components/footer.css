@@ -5,8 +5,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
-.footer-wrapper p {
-  color:white;
+.footer-content {
+  text-align: center;
+  color: white;
 }

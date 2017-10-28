@@ -1,7 +1,7 @@
 /* ##################### CARD STYLING ##################### */
 
 .card {
-  margin: 50px auto;
+  margin: 0px auto 50px auto;
   background-color: white;
   text-align: center;
   padding: 30px;

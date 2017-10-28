@@ -1,14 +1,25 @@
 .header {
   height:100vh;
   width: 100vw;
-  background: linear-gradient(192.5deg, #fff 0%, #fff 65%, rgba(205, 233, 242, 1) 65%, rgba(205, 233, 242, 1) 100%);
-  position: relative;
+  background: linear-gradient(315deg, transparent 0%, transparent 65%, rgba(205, 233, 242, 1) 65%, #85C7F2 100%);
   left: 0;
   top: 0;
   /* Now this will center the header text */
   display: flex;
   flex-flow: column;
   justify-content: center;
+
+}
+
+.header::after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height:100vh;
+  width: 100vw;
+  background: linear-gradient(192.5deg, #fff 0%, #fff 65%, rgba(205, 233, 242, 1) 65%, #8DDBE0 100%);
+  z-index:-1000;
+  content: ""
 }
 
 .header-content-right {
@@ -22,6 +33,7 @@
 .header h1 {
   text-align: center;
   line-height: 120%;
+  color: rgba(205, 233, 242, 1)
 }
 
 .header h2 {

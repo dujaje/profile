@@ -32,9 +32,18 @@ ul#tabs li a.selected {
 
 div.tabContent {
   border-top: 2px solid rgba(205, 233, 242, 1);
-  padding-top: 50px;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 
 div.tabContent.hide {
   display: none;
+}
+
+.ongoing-projects h6 {
+  padding-top: 0px;
+}
+
+#experience {
+  margin-top: 50px;
 }
